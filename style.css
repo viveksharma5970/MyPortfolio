@@ -118,7 +118,21 @@ html {
   padding: 5px;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  animation: pulseBorder 2s infinite;
 }
+
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 0 10px #487ac4;
+  }
+  50% {
+    box-shadow: 0 0 20px #487ac4;
+  }
+  100% {
+    box-shadow: 0 0 10px #487ac4;
+  }
+}
+
 
 .profile-pic {
   width: 300px;
@@ -475,3 +489,4 @@ html {
     flex-shrink: 0; /* Prevent image from shrinking */
   }
 }
+
