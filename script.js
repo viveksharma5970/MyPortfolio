@@ -31,3 +31,13 @@ function type() {
 }
 
 document.addEventListener("DOMContentLoaded", type);
+
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === 'F12' || (e.ctrlKey && (e.key === 'U' || e.key === 'u'))) {
+    e.preventDefault();
+  }
+});
